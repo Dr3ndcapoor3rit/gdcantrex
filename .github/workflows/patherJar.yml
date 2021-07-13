@@ -39,7 +39,7 @@ jobs:
         tag: jar
         file_glob: true
         overwrite: true
-        release_name: jar      
+        release_name: Patcherjar      
     - name: Update
       run: |
         rm README.md
